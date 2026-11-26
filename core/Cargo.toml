@@ -1,0 +1,13 @@
+[package]
+name = "disksage-core"
+version = "0.1.0"
+edition = "2021"
+description = "Scanner, rule engine, safety guard and duplicate finder for DiskSage"
+
+[dependencies]
+rayon = "1.10"
+serde = { version = "1", features = ["derive"] }
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
+
+[dev-dependencies]
+tempfile = "3"
